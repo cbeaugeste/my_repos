@@ -45,3 +45,41 @@ type nul > logfile.txt
 setx PATH "%PATH%;C:\Tools"
 reg query HKLM\Software\Microsoft\Windows\CurrentVersion\Run
 net use \\fileserver\share
+df -T
+du -sh /var/log/*
+find /etc -name "*.conf"
+grep -i 'error' /var/log/syslog
+lsblk
+mount | column -t
+history
+uptime -p
+ip route show
+hostname -I
+netstat -tuln
+top -n 1
+htop
+journalctl -xe
+alias ll='ls -alF'
+env
+echo $HOME
+who
+groups
+crontab -l
+ifconfig -a
+traceroute 8.8.8.8
+arp -a
+ping6 ipv6.google.com
+Get-Process
+Get-Service
+Get-EventLog -LogName System -Newest 10
+Get-Command
+Set-ExecutionPolicy RemoteSigned
+Start-Service MSSQLSERVER
+Stop-Service Spooler
+copy C:\data\file.txt D:\backup\
+xcopy C:\project\*.* D:\project_backup\ /s /e
+robocopy C:\source D:\dest /MIR
+msinfo32
+dxdiag
+taskschd.msc
+diskpart
