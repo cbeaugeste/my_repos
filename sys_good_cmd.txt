@@ -1,0 +1,47 @@
+ls -l /home
+cat /etc/passwd
+ping -c 4 google.com
+ipconfig /all
+dir C:\Windows\System32
+netstat -an
+df -h
+free -m
+tasklist
+ps aux
+systemctl status sshd
+service apache2 restart
+whoami
+hostnamectl
+uptime
+chown user:user file.txt
+chmod 755 script.sh
+scp file.txt user@remote:/tmp/
+rsync -av /data/ /backup/
+curl http://example.com
+wget https://example.org
+nano /etc/hosts
+notepad C:\Windows\System32\drivers\etc\hosts
+sqlplus hr/hr@XE
+sqlite3 mydb.db
+mysql -u root -p
+mysql -h localhost -u user -p database
+pgcli -h localhost -U postgres dbname
+psql -U postgres -d mydb
+docker ps
+docker exec -it db bash
+shutdown -s -t 3600
+reboot
+echo "Backup started" >> /var/log/backup.log
+at 15:00 /interactive cmd.exe
+schtasks /create /tn "MyTask" /tr "notepad.exe" /sc daily /st 14:00
+ip a
+netsh interface ipv4 show config
+mkdir new_folder
+rmdir old_folder
+move file1.txt D:\Archive\
+cp data.csv /tmp/
+mv test.sh ../scripts/
+type nul > logfile.txt
+setx PATH "%PATH%;C:\Tools"
+reg query HKLM\Software\Microsoft\Windows\CurrentVersion\Run
+net use \\fileserver\share
