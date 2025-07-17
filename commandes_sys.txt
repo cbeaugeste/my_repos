@@ -1,0 +1,532 @@
+df -h
+
+. oraenv
+
+. oraenv                                                                  I
+
+sqlp
+
+df -h
+
+. oraenv
+
+. oraenv
+
+sqlp
+
+df -h
+
+. oraenv
+
+. oraenv
+
+sqlp
+
+. oraenv
+
+. oraenv
+
+sqlp
+
+. oraenv
+
+. oraenv
+
+sqlp
+
+|
+
+. oraenv
+
+. oraenv
+
+sqlp
+
+|
+
+. oraenv
+
+. oraenv
+
+sqlp
+
+|
+
+. oraenv
+
+. oraenv
+
+sqlp
+
+|
+
+. oraenv
+
+. oraenv
+
+sqlp
+
+. oraenff
+
+. oraenv
+
+. oraenv
+
+sqlp
+
+. oraenv
+
+. oraenv
+
+. oraenv
+
+sqlp
+
+. oraenv
+
+. oraenv
+
+. oraenv
+
+sqlp
+
+. oraenv
+
+sqlp
+
+.roduction on Fri Mar 14
+
+.
+
+sqlp
+
+. oraenv                        Il
+
+sqlp
+
+. oraenv
+
+sqlp
+
+. oraenv
+
+sqlp
+
+. oraef                                                                                                                                                                        ”
+
+. oraenv
+
+sqlp
+
+. oraenv
+
+. oraenv
+
+sqlp
+
+. oraenv
+
+fj                                                                                                                                                           5
+
+. oraenv
+
+sqlp
+
+. oraenv
+
+sqlp
+
+df -h
+
+sqlp
+
+df -h
+
+sqlp
+
+df -h
+
+sqlp
+
+df -h
+
+sqlp
+
+df -h
+
+sqlp
+
+df -h
+
+sqlp
+
+df -h
+
+sqlp
+
+df -h
+
+sqlp
+
+df -h
+
+sqlp
+
+df -h
+
+sqlp
+
+df -h
+
+sqlp
+
+df -h
+
+sqlp
+
+df -h
+
+sqlp
+
+. oraenv
+
+sqlp
+
+. oraenv
+
+sqlp
+
+. oraenv
+
+sqlp
+
+. oraenv
+
+sqlp
+
+. oraenv
+
+sqlp
+
+. oraenv
+
+sqlp
+
+. oraenv
+
+sqlp
+
+. oraenv
+
+sqlp
+
+. oraenv
+
+sqlp
+
+. oraenv
+
+sqlp
+
+sqlp
+
+sqlp
+
+sqlp
+
+sqlp
+
+sqlp
+
+sqlp
+
+sqlp
+
+. oraenv
+
+sqlp
+
+. oraenv
+
+sqlp
+
+. oraenv
+
+sqlp
+
+. oraenv
+
+sqlp
+
+. oraenv
+
+sqlp
+
+. oraenv
+
+sqlp
+
+. oraenv
+
+sqlp
+
+. oraenv
+
+sqlp
+
+. oraenv
+
+sqlp
+
+sqlp
+
+sqlplus / as sysdba
+
+sqlp
+
+sqlplus / as sysdba
+
+sqlp
+
+sqlplus / as sysdba
+
+sqlp
+
+sqlplus / as sysdba
+
+sqlp
+
+sqlplus / as sysdba
+
+sqlp
+
+sqlplus / as sysdba
+
+sqlp
+
+sqlp
+
+sqlp
+
+sqlp
+
+sqlp
+
+sqlplus / as sysdba
+
+sqlp
+
+sqlplus / as sysdba
+
+sqlp
+
+sqlplus / as sysdba
+
+sqlp
+
+sqlplus / as sysdba
+
+sqlp
+
+sqlplus / as sysdba
+
+sqlp
+
+sqlp
+
+sqlp
+
+sqlp
+
+sqlp
+
+sqlp
+
+sqlp
+
+sqlp
+
+sqlplus / as sysdba
+
+df -h
+
+sqlp
+
+sqlplus / as sysdba
+
+sqlp
+
+sqlplus / as sysdba
+
+sqlp
+
+sqlplus / as sysdba
+
+sqlp
+
+sqlplus / as sysdba
+
+sqlp
+
+sqlplus / as sysdba
+
+sqlp
+
+sqlplus / as sysdba
+
+sqlp
+
+sqlplus / as sysdba
+
+sqlp
+
+sqlplus / as sysdba
+
+sqlp
+
+sqlplus / as sysdba
+
+sqlp
+
+sqlplus / as sysdba
+
+sqlp
+
+sqlplus / as sysdba
+
+sqlp
+
+sqlplus / as sysdba
+
+sqlp
+
+sqlplus / as sysdba
+
+sqlp
+
+sqlplus / as sysdba
+
+sqlp
+
+sqlplus / as sysdba
+
+sqlp
+
+sqlplus / as sysdba
+
+sqlp
+
+sqlplus / as sysdba
+
+sqlp
+
+sqlplus / as sysdba
+
+sqlp
+
+sqlplus / as sysdba
+
+sqlp
+
+sqlplus / as sysdba
+
+sqlp
+
+sqlplus / as sysdba
+
+sqlp
+
+sqlplus / as sysdba
+
+sqlp
+
+sqlplus / as sysdba
+
+sqlp
+
+sqlplus / as sysdba
+
+sqlp
+
+sqlplus / as sysdba
+
+sqlp
+
+sqlplus / as sysdba
+
+sqlp
+
+sqlplus / as sysdba
+
+sqlp
+
+sqlplus / as sysdba
+
+sqlp
+
+sqlplus / as sysdba
+
+. oraenv
+
+sqlp                                                                             I
+
+. oraenv
+
+sqlp
+
+. oraenv
+
+sqlp
+
+. oraenv
+
+sqlp
+
+. oraenv
+
+sqlp
+
+. oraenv
+
+sqlp
+
+. oraenv
+
+sqlp
+
+. oraenv
+
+sqlp
+
+. oraenv
+
+sqlp
+
+. oraenv
+
+sqlp
+
+. oraenv
+
+sqlp
+
+. oraenv
+
+sqlp
+
+. oraenv
+
+sqlp
+
+. oraenv
+
+sqlp
+
+. oraenv
+
+sqlp
+
+. oraenv
+
+sqlp
+
