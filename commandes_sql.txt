@@ -1,0 +1,610 @@
+exit
+
+exit
+
+exit
+
+exit
+
+exit
+
+exit
+
+exit
+
+exit
+
+exit
+
+exit
+
+exit
+
+exit
+
+exit
+
+exit
+
+exit
+
+exit
+
+exit
+
+exit
+
+select
+“Reserved Space(GB)", “Reserved _Space(GB)" - “Free Space(GB)" “Used _Space(GB)", “Free Space(GB)”™
+from(
+2    3    4      select
+(select round(sum(bytes)/1048576/1024) from dba_data_files) “Reserved_Space(GB)",
+5    6      (select round(sum(bytes)/1048576/1024) from dba_free_space) “Free Space(GB)”
+from dual
+7 68    >;
+
+select
+“Reserved Space(GB)", “Reserved _Space(GB)" - “Free Space(GB)" “Used _Space(GB)", “Free Space(GB)”™
+from(
+2    3    4      select
+(select round(sum(bytes)/1048576/1024) from dba_data_files) “Reserved_Space(GB)",
+5    6      (select round(sum(bytes)/1048576/1024) from dba_free_space) “Free Space(GB)”
+from dual
+7 68    >;
+
+select
+“Reserved Space(GB)", “Reserved _Space(GB)" - “Free Space(GB)" “Used _Space(GB)", “Free Space(GB)”™
+from(
+2    3    4      select
+(select round(sum(bytes)/1048576/1024) from dba_data_files) “Reserved_Space(GB)",
+5    6      (select round(sum(bytes)/1048576/1024) from dba_free_space) “Free Space(GB)”
+from dual
+7 68    >;
+
+select
+“Reserved Space(GB)", “Reserved _Space(GB)" - “Free Space(GB)" “Used _Space(GB)", “Free Space(GB)”™
+from(
+2    3    4      select
+(select round(sum(bytes)/1048576/1024) from dba_data_files) “Reserved_Space(GB)",
+5    6      (select round(sum(bytes)/1048576/1024) from dba_free_space) “Free Space(GB)”
+from dual
+7 68    >;
+
+select
+“Reserved _Space(GB)", “Reserved _Space(GB)" - “Free Space(GB)" “Used _Space(GB)", “Free Space(GB)”
+from(
+2    3    4      select
+(select round(sum(bytes)/1048576/1024) from dba_data_files) “Reserved_Space(GB)",
+5    6      (select round(sum(bytes)/1048576/1024) from dba_free_space) “Free Space(GB)”
+from dual
+7 68    >;
+
+select
+“Reserved _Space(GB)", “Reserved _Space(GB)" - “Free Space(GB)" “Used _Space(GB)", “Free Space(GB)”
+from(
+2    3    4      select
+(select round(sum(bytes)/1048576/1024) from dba_data_files) “Reserved_Space(GB)",
+5    6      (select round(sum(bytes)/1048576/1024) from dba_free_space) “Free Space(GB)”
+from dual
+7 68    >;
+
+select
+“Reserved Space(GB)", “Reserved _Space(GB)" - “Free Space(GB)" “Used _Space(GB)", “Free Space(GB)”™
+from(
+2    3    4      select
+(select round(sum(bytes)/1048576/1024) from dba_data_files) “Reserved_Space(GB)”,
+5    6      (select round(sum(bytes)/1048576/1024) from dba_free_space) “Free Space(GB)”
+from dual
+7 68    >;
+
+select
+“Reserved Space(GB)", “Reserved _Space(GB)" - “Free Space(GB)" “Used _Space(GB)", “Free Space(GB)”™
+from(
+2    3    4      select
+(select round(sum(bytes)/1048576/1024) from dba_data_files) “Reserved_Space(GB)",
+5    6      (select round(sum(bytes)/1048576/1024) from dba_free_space) “Free Space(GB)”
+from dual
+7 68    >;
+
+exit
+
+exit
+
+exit
+
+exit
+
+exit
+
+exit
+
+exit
+
+exit
+
+exit
+
+exit
+
+exit
+
+exit
+
+exit
+
+exit
+
+exit
+
+exit
+
+exit
+
+exit
+
+exit
+
+select
+"Reserved Space(GB)", “Reserved _Space(GB)" - “Free Space(GB)" "Used _Space(GB)","Free_Space(GB)”
+from(
+2      select
+3    4    5       (select round(sum(bytes)/1048576/1024) from dba_data_files) “Reserved Space(GB)",
+6      (select round(sum(bytes)/1048576/1024) from dba_free_space) “Free Space(GB)”
+7      from dual
+);
+
+select
+"Reserved Space(GB)", “Reserved _Space(GB)" - “Free Space(GB)”" “Used _Space(GB)", "Free _Space(GB)”
+from(
+2      select
+3    4    5       (select round(sum(bytes)/1048576/1024) from dba_data_files) “Reserved Space(GB)",
+6      (select round(sum(bytes)/1048576/1024) from dba_free_space) “Free Space(GB)”
+7      from dual
+);
+
+select
+"Reserved Space(GB)", “Reserved _Space(GB)" - “Free Space(GB)" “Used _Space(GB)", "Free _Space(GB)”
+from(
+2      select
+3    4    5       (select round(sum(bytes)/1048576/1024) from dba_data_files) “Reserved Space(GB)",
+6      (select round(sum(bytes)/1048576/1024) from dba_free_space) “Free Space(GB)”
+7      from dual
+);
+
+select
+"Reserved Space(GB)", “Reserved _Space(GB)" - “Free _Space(GB)”" “Used _Space(GB)","“Free_Space(GB)”
+from(
+2      select
+3    4    5       (select round(sum(bytes)/1048576/1024) from dba_data_files) “Reserved Space(GB)”,
+6      (select round(sum(bytes)/1048576/1024) from dba_free_space) “Free _Space(GB)”
+7      from dual
+);
+
+exit
+
+exit
+
+exit
+
+exit
+
+exit
+
+exit
+
+exit
+
+exit
+
+exit
+
+select
+“Reserved _Space(GB)", “Reserved _Space(GB)" - “Free Space(GB)" “Used _Space(GB)", “Free Space(GB)”
+From(
+select
+(select round(sum(bytes) /1048576/1024) from dba_data_files) “Reserved _Space(GB)",
+2    3]    4    5    6      (select round(sum(bytes)/1048576/1024) from dba_free_space) “Free Space(GB)”
+from dual
+);
+
+select
+"Reserved _Space(GB)", “Reserved _Space(GB)" - “Free Space(GB)" “Used _Space(GB)", “Free Space(GB)”
+from(
+select
+(select round(sum(bytes)/1048576/1024) from dba_data_files) “Reserved _Space(GB)",
+2    3    4    5    6      (select round(sum(bytes)/1048576/1024) from dba_free_space) “Free Space(GB)”
+from dual
+);
+
+select
+"Reserved Space(GB)", “Reserved _Space(GB)" - “Free Space(GB)" “Used _Space(GB)", “Free Space(GB)”
+from(
+select
+(select round(sum(bytes)/1048576/1024) from dba_data_files) “Reserved _Space(GB)”,
+2    3    4    5    6      (select round(sum(bytes)/1048576/1024) from dba_free_space) "Free Space(GB)”
+from dual
+);
+
+select
+"Reserved Space(GB)", “Reserved _Space(GB)" - “Free Space(GB)" “Used _Space(GB)", “Free _Space(GB)”
+from(
+select
+(select round(sum(bytes) /1048576/1024) from dba_data_files) “Reserved _Space(GB)",
+2    3    4    5    6      (select round(sum(bytes)/1048576/1024) from dba_free_space) “Free Space(GB)”
+from dual
+);
+
+select
+"Reserved Space(GB)", “Reserved _Space(GB)" - “Free Space(GB)" “Used _Space(GB)", “Free _Space(GB)”
+from(
+select
+(select round(sum(bytes) /1048576/1024) from dba_data_files) “Reserved _Space(GB)",
+2    3    4    5    6      (select round(sum(bytes)/1048576/1024) from dba_free_space) “Free Space(GB)”
+from dual
+);
+
+select
+"Reserved Space(GB)", “Reserved _Space(GB)" - “Free Space(GB)”" “Used _Space(GB)","“Free_Space(GB)”
+from(
+select
+(select round(sum(bytes)/1048576/1024) from dba_data_files) “Reserved _Space(GB)”,
+(select round(sum(bytes)/1048576/1024) from dba_free_space) “Free Space(GB)”
+from dual
+);
+
+select
+"Reserved Space(GB)", “Reserved _Space(GB)" - “Free Space(GB)”" “Used _Space(GB)","“Free_Space(GB)”
+from(
+select
+(select round(sum(bytes)/1048576/1024) from dba_data_files) “Reserved _Space(GB)",
+(select round(sum(bytes)/1048576/1024) from dba_free_space) “Free Space(GB)”
+from dual
+);
+
+select
+"Reserved Space(GB)", “Reserved Space(GB)" - “Free Space(GB)” “Used _Space(GB)", "Free _Space(GB)”
+from(
+select
+(select round(sum(bytes)/1048576/1024) from dba_data_files) “Reserved _Space(GB)",
+(select round(sum(bytes)/1048576/1024) from dba_free_space) “Free Space(GB)”
+from dual
+);
+
+select
+"Reserved Space(GB)", “Reserved Space(GB)" - “Free Space(GB)” “Used _Space(GB)", "Free _Space(GB)”
+from(
+select
+(select round(sum(bytes)/1048576/1024) from dba_data_files) “Reserved _Space(GB)",
+(select round(sum(bytes)/1048576/1024) from dba_free_space) “Free Space(GB)”
+from dual
+);
+
+select
+"Reserved Space(GB)", “Reserved _Space(GB)" - “Free Space(GB)" “Used _Space(GB)", "Free _Space(GB)”
+from(
+select
+(select round(sum(bytes)/1048576/1024) from dba_data_files) “Reserved Space(GB)",
+(select round(sum(bytes)/1048576/1024) from dba_free_space) “Free Space(GB)”
+from dual
+);
+
+select
+"Reserved Space(GB)", “Reserved _Space(GB)" - “Free Space(GB)" “Used _Space(GB)", "Free Space(GB)”
+from(
+select
+(select round(sum(bytes)/1048576/1024) from dba_data_files) “Reserved_Space(GB)",
+(select round(sum(bytes)/1048576/1024) from dba_free_space) “Free Space(GB)”
+from dual
+);
+
+select
+"Reserved Space(GB)", “Reserved _Space(GB)" - “Free Space(GB)”" “Used _Space(GB)","“Free_Space(GB)”
+from(
+select
+(select round(sum(bytes)/1048576/1024) from dba_data_files) “Reserved Space(GB)”,
+(select round(sum(bytes)/1048576/1024) from dba_free_space) “Free Space(GB)”
+from dual
+);
+
+select
+"Reserved Space(GB)", “Reserved _Space(GB)" - “Free Space(GB)” “Used _Space(GB)","“Free_Space(GB)”
+from(
+select
+(select round(sum(bytes)/1048576/1024) from dba_data_files) “Reserved Space(GB)",
+(select round(sum(bytes)/1048576/1024) from dba_free_space) “Free Space(GB)”
+from dual
+);
+
+select
+"Reserved Space(GB)", “Reserved Space(GB)" - “Free Space(GB)” “Used _Space(GB)", "Free _Space(GB)”
+from(
+select
+(select round(sum(bytes)/1048576/1024) from dba_data_files) “Reserved Space(GB)",
+(select round(sum(bytes)/1048576/1024) from dba_free_space) “Free Space(GB)”
+from dual
+);
+
+select
+"Reserved Space(GB)", “Reserved Space(GB)" - “Free Space(GB)”" “Used _Space(GB)", "Free _Space(GB)”
+from(
+select
+(select round(sum(bytes)/1048576/1024) from dba_data_files) “Reserved _Space(GB)",
+(select round(sum(bytes)/1048576/1024) from dba_free_space) “Free Space(GB)”
+from dual
+);
+
+select
+"Reserved _Space(GB)", “Reserved _Space(GB)" - “Free Space(GB)" “Used _Space(GB)", “Free _Space(GB)”
+from(
+select
+(select round(sum(bytes) /1048576/1024) from dba_data_files) “Reserved _Space(GB)",
+(select round(sum(bytes)/1048576/1024) from dba_free_space) “Free Space(GB)”
+from dual
+);
+
+select
+“Reserved _Space(GB)", “Reserved _Space(GB)" - “Free Space(GB)" “Used _Space(GB)", “Free Space(GB)”
+Ffrom(
+select
+(select round(sum(bytes) /1048576/1024) from dba_data_files) “Reserved _Space(GB)",
+(select round(sum(bytes)/1048576/1024) from dba_free_space) “Free Space(GB)”
+from dual
+);
+
+select
+“Reserved _Space(GB)", “Reserved _Space(GB)" - “Free Space(GB)" “Used _Space(GB)", “Free Space(GB)”
+from(
+select
+(select round(sum(bytes)/1048576/1024) from dba_data_files) “Reserved _Space(GB)",
+(select round(sum(bytes)/1048576/1024) from dba_free_space) “Free Space(GB)”
+from dual
+);
+
+select
+"Reserved Space(GB)", “Reserved _Space(GB)" - “Free Space(GB)" “Used _Space(GB)", “Free Space(GB)”
+from(
+select
+(select round(sum(bytes)/1048576/1024) from dba_data_files) “Reserved _Space(GB)",
+(select round(sum(bytes)/1048576/1024) from dba_free_space) “Free Space(GB)”
+from dual
+);
+
+select
+"Reserved Space(GB)", “Reserved _Space(GB)" - “Free Space(GB)" “Used_Space(GB)", “Free _Space(GB)”
+from(
+select
+(select round(sum(bytes)/1048576/1024) from dba_data_files) “Reserved _Space(GB)",
+(select round(sum(bytes)/1048576/1024) from dba_free_space) “Free Space(GB)”
+from dual
+);
+
+select
+"Reserved _Space(GB)", “Reserved _Space(GB)" - “Free Space(GB)" “Used _Space(GB)", “Free _Space(GB)”
+from(
+select
+(select round(sum(bytes) /1048576/1024) from dba_data_files) “Reserved _Space(GB)",
+(select round(sum(bytes)/1048576/1024) from dba_free_space) “Free Space(GB)”
+from dual
+);
+
+select
+"Reserved Space(GB)", “Reserved _Space(GB)" - “Free Space(GB)" “Used _Space(GB)", "Free _Space(GB)”
+from(
+select
+(select round(sum(bytes) /1048576/1024) from dba_data_files) “Reserved _Space(GB)",
+(select round(sum(bytes)/1048576/1024) from dba_free_space) “Free Space(GB)”
+from dual
+);
+
+select
+"Reserved Space(GB)", “Reserved _Space(GB)" - “Free Space(GB)" “Used _Space(GB)", "Free _Space(GB)”
+from(
+select
+(select round(sum(bytes) /1048576/1024) from dba_data_files) “Reserved _Space(GB)",
+(select round(sum(bytes)/1048576/1024) from dba_free_space) “Free Space(GB)”
+from dual
+);
+
+select
+"Reserved _Space(GB)", “Reserved _Space(GB)" - “Free Space(GB)" “Used _Space(GB)", “Free Space(GB)”
+from(
+select
+(select round(sum(bytes) /1048576/1024) from dba_data_files) “Reserved _Space(GB)",
+(select round(sum(bytes)/1048576/1024) from dba_free_space) “Free Space(GB)”
+from dual
+);
+
+select
+"Reserved _Space(GB)", “Reserved _Space(GB)" - “Free Space(GB)" “Used _Space(GB)", “Free Space(GB)”
+from(
+select
+(select round(sum(bytes) /1048576/1024) from dba_data_files) “Reserved _Space(GB)",
+(select round(sum(bytes)/1048576/1024) from dba_free_space) “Free Space(GB)”
+from dual
+);
+
+select
+"Reserved _Space(GB)", “Reserved _Space(GB)" - “Free Space(GB)" “Used _Space(GB)", “Free Space(GB)”
+from(
+select
+(select round(sum(bytes) /1048576/1024) from dba_data_files) “Reserved _Space(GB)",
+(select round(sum(bytes)/1048576/1024) from dba_free_space) “Free Space(GB)”
+from dual
+);
+
+select
+"Reserved Space(GB)", “Reserved _Space(GB)" - “Free Space(GB)" “Used _Space(GB)", “Free Space(GB)”
+from(
+select
+(select round(sum(bytes) /1048576/1024) from dba_data_files) “Reserved _Space(GB)",
+(select round(sum(bytes)/1048576/1024) from dba_free_space) “Free Space(GB)”
+from dual
+);
+
+select
+"Reserved Space(GB)", “Reserved _Space(GB)" - “Free Space(GB)" “Used _Space(GB)", “Free Space(GB)”
+from(
+select
+(select round(sum(bytes)/1048576/1024) from dba_data_files) “Reserved Space(GB)”,
+(selec 2 t round(sum(bytes)/1048576/1024) from dba_free_space) “Free _Space(GB)”
+from dual
+);
+
+select
+"Reserved Space(GB)", “Reserved _Space(GB)" - “Free Space(GB)" “Used _Space(GB)", “Free _Space(GB)”
+from(
+select
+(select round(sum(bytes)/1048576/1024) from dba_data_files) “Reserved Space(GB)”,
+(selec 2 t round(sum(bytes)/1048576/1024) from dba_free_space) “Free _Space(GB)”
+from dual
+);
+
+select
+"Reserved Space(GB)", “Reserved _Space(GB)" - “Free Space(GB)" “Used _Space(GB)", “Free _Space(GB)”
+from(
+select
+(select round(sum(bytes) /1048576/1024) from dba_data_files) “Reserved _Space(GB)",
+(selec 2 t round(sum(bytes)/1048576/1024) from dba_free_space) “Free _Space(GB)”
+from dual
+);
+
+select
+"Reserved Space(GB)", “Reserved _Space(GB)" - “Free Space(GB)" “Used _Space(GB)", “Free _Space(GB)”
+from(
+select
+(select round(sum(bytes) /1048576/1024) from dba_data_files) “Reserved _Space(GB)",
+(selec 2 t round(sum(bytes)/1048576/1024) from dba_free_space) “Free _Space(GB)”
+from dual
+);
+
+select
+"Reserved Space(GB)", “Reserved _Space(GB)" - “Free Space(GB)”" “Used _Space(GB)", “Free _Space(GB)”
+from(
+select
+(select round(sum(bytes) /1048576/1024) from dba_data_files) “Reserved _Space(GB)",
+(selec 2 t round(sum(bytes)/1048576/1024) from dba_free_space) “Free _Space(GB)”
+from dual
+);
+
+select
+"Reserved Space(GB)", “Reserved _Space(GB)" - “Free Space(GB)”" “Used _Space(GB)", “Free _Space(GB)”
+from(
+select
+(select round(sum(bytes) /1048576/1024) from dba_data_files) “Reserved _Space(GB)",
+(selec 2 t round(sum(bytes)/1048576/1024) from dba_free_space) “Free _Space(GB)”
+from dual
+);
+
+select
+"Reserved Space(GB)", “Reserved _Space(GB)" - “Free Space(GB)" “Used _Space(GB)", “Free Space(GB)”
+from(
+select
+(select round(sum(bytes) /1048576/1024) from dba_data_files) “Reserved _Space(GB)",
+(selec 2 t round(sum(bytes)/1048576/1024) from dba_free_space) “Free _Space(GB)”
+from dual
+);
+
+select
+"Reserved Space(GB)", “Reserved _Space(GB)" - “Free Space(GB)" “Used _Space(GB)", “Free Space(GB)”
+from(
+select
+(select round(sum(bytes) /1048576/1024) from dba_data_files) “Reserved _Space(GB)",
+(selec 2 t round(sum(bytes)/1048576/1024) from dba_free_space) “Free _Space(GB)”
+from dual
+);
+
+select
+"Reserved Space(GB)", “Reserved _Space(GB)" - “Free Space(GB)" “Used _Space(GB)", “Free Space(GB)”
+from(
+select
+(select round(sum(bytes) /1048576/1024) from dba_data_files) “Reserved _Space(GB)",
+(selec 2 t round(sum(bytes)/1048576/1024) from dba_free_space) “Free _Space(GB)”
+from dual
+);
+
+select
+“Reserved _Space(GB)", “Reserved _Space(GB)" - “Free Space(GB)" “Used _Space(GB)", “Free Space(GB)”
+from(
+select
+(select round(sum(bytes) /1048576/1024) from dba_data_files) “Reserved _Space(GB)",
+(selec 2 t round(sum(bytes)/1048576/1024) from dba_free_space) “Free _Space(GB)”
+from dual
+);
+
+select
+“Reserved _Space(GB)", “Reserved _Space(GB)" - “Free Space(GB)" “Used _Space(GB)", “Free Space(GB)”
+from(
+select
+(select round(sum(bytes) /1048576/1024) from dba_data_files) “Reserved _Space(GB)",
+(selec 2 t round(sum(bytes)/1048576/1024) from dba_free_space) “Free _Space(GB)”
+from dual
+);
+
+select
+“Reserved _Space(GB)", “Reserved _Space(GB)" - “Free Space(GB)" “Used _Space(GB)", “Free Space(GB)”
+from(
+select
+(select round(sum(bytes) /1048576/1024) from dba_data_files) “Reserved _Space(GB)",
+(selec 2 t round(sum(bytes)/1048576/1024) from dba_free_space) “Free _Space(GB)”
+from dual
+);
+
+select
+“Reserved Space(GB)", “Reserved _Space(GB)" - “Free Space(GB)" “Used _Space(GB)", “Free Space(GB)”
+from(
+select
+(select round(sum(bytes) /1048576/1024) from dba_data_files) “Reserved _Space(GB)",
+(selec 2 t round(sum(bytes)/1048576/1024) from dba_free_space) “Free _Space(GB)”
+from dual
+);
+
+select
+"Reserved _Space(GB)", “Reserved _Space(GB)" - “Free Space(GB)" “Used _Space(GB)", “Free Space(GB)”
+from(
+select
+(select round(sum(bytes) /1048576/1024) from dba_data_files) “Reserved _Space(GB)",
+(selec 2 t round(sum(bytes)/1048576/1024) from dba_free_space) “Free _Space(GB)”
+from dual
+);
+
+select
+"Reserved Space(GB)", “Reserved _Space(GB)" - “Free Space(GB)" “Used _Space(GB)", “Free Space(GB)”
+from(
+select
+(select round(sum(bytes) /1048576/1024) from dba_data_files) “Reserved _Space(GB)",
+(selec 2 t round(sum(bytes)/1048576/1024) from dba_free_space) “Free _Space(GB)”
+from dual
+);
+
+exit
+
+exit
+
+exit
+
+exit
+
+exit
+
+exit
+
+exit
+
+exit
+
+exit
+
+exit
+
+exit
+
+exit
+
+exit
+
+exit
+
+exit
+
+exit
+
